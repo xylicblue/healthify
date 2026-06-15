@@ -4,7 +4,7 @@ const FamilyContext = createContext(null)
 const STORAGE_KEY = 'healthify_family_id'
 
 export function FamilyProvider({ children }) {
-  const [familyId, _setFamilyId] = useState(() => localStorage.getItem(STORAGE_KEY) ?? undefined)
+  const [familyId, _setFamilyId] = useState(() => localStorage.getItem(STORAGE_KEY) ?? null)
   const [currentMember, setCurrentMember] = useState(null)
 
   function setFamilyId(id) {

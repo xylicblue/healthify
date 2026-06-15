@@ -79,8 +79,8 @@ function AppRoutes({ session }) {
       .catch(() => {})
   }, [session])
 
-  // Still checking: session unknown, or session exists but familyId not yet determined
-  if (session === undefined || (session && familyId === undefined)) return <LoadingScreen />
+  // Only block while Supabase hasn't resolved the session yet (local check, near-instant)
+  if (session === undefined) return <LoadingScreen />
 
   return (
     <Routes>
