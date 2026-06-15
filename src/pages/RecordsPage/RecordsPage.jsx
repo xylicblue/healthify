@@ -382,7 +382,7 @@ export default function RecordsPage() {
           Back to {memberName}'s Profile
         </Link>
 
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-6 animate-fade-up">
           <h1 className="text-2xl font-bold text-slate-900">Health Records</h1>
           <div className="flex items-center gap-2">
             <button
@@ -391,20 +391,20 @@ export default function RecordsPage() {
               className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-slate-600 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
             >
               {exportBusy ? <Loader2 className="w-4 h-4 animate-spin" /> : <FileDown className="w-4 h-4" />}
-              Export PDF
+              <span className="hidden sm:inline">Export PDF</span>
             </button>
             <Link
               to={`/add-record?memberId=${id}&type=${activeTab}`}
               className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-150"
             >
               <Plus className="w-4 h-4" />
-              Add Record
+              <span className="hidden sm:inline">Add Record</span>
             </Link>
           </div>
         </div>
 
         {/* Tab navigation */}
-        <div className="flex gap-1.5 mb-6 p-1 bg-white rounded-xl border border-slate-200 w-fit">
+        <div className="flex gap-1.5 mb-6 p-1 bg-white rounded-xl border border-slate-200 w-fit animate-fade-up delay-75">
           {TABS.map(({ id: tabId, label, Icon, color, activeBg, activeBorder }) => {
             const isActive = activeTab === tabId
             return (
@@ -423,7 +423,7 @@ export default function RecordsPage() {
         </div>
 
         {/* Chart — hidden for lab tab */}
-        {activeTab !== 'lab' && <div className="chart-section bg-white rounded-2xl border border-slate-200 p-6 mb-6">
+        {activeTab !== 'lab' && <div className="chart-section bg-white rounded-2xl border border-slate-200 p-6 mb-6 animate-fade-up delay-75">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-slate-900">Trend</h2>
             <div className="flex gap-1 items-center">
@@ -527,7 +527,7 @@ export default function RecordsPage() {
         </div>}
 
         {/* Records table */}
-        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+        <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden animate-fade-up delay-150">
           <div className="px-6 py-4 border-b border-slate-100">
             <h2 className="font-semibold text-slate-900">{activeTabConfig?.label} History</h2>
           </div>
