@@ -3,7 +3,7 @@ import { X, Mail, Send, CheckCircle, Loader2, Phone } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 
 const API = 'https://healthify-backend-production-0e90.up.railway.app'
-const APP_URL = 'http://localhost:5173'
+const APP_URL = 'https://healthifiy.netlify.app'
 
 export default function InviteModal({ inviteCode, onClose }) {
   const [method, setMethod] = useState('whatsapp')  // 'whatsapp' | 'email'
