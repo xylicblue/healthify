@@ -1,0 +1,25 @@
+.records-page {
+  animation: pageFadeIn 0.35s ease;
+}
+
+.chart-section {
+  animation: fadeInUp 0.4s ease both;
+  animation-delay: 0.08s;
+}
+
+.chart-placeholder {
+  transition: background-color 0.15s ease;
+}
+.chart-placeholder:hover {
+  background-color: #f8fafc;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}

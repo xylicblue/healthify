@@ -1,0 +1,40 @@
+.dashboard-page {
+  animation: pageFadeIn 0.35s ease;
+}
+
+.dashboard-header {
+  animation: slideDown 0.4s ease;
+}
+
+/* Stat cards stagger in */
+.stat-card {
+  animation: fadeInUp 0.4s ease both;
+}
+.stat-card:nth-child(1) { animation-delay: 0.04s; }
+.stat-card:nth-child(2) { animation-delay: 0.09s; }
+.stat-card:nth-child(3) { animation-delay: 0.14s; }
+
+/* Member cards stagger in (delay set inline per card) */
+.member-card-anim {
+  animation: fadeInUp 0.4s ease both;
+}
+
+.add-member-card {
+  animation: fadeInUp 0.4s ease both;
+  animation-delay: 0.28s;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
