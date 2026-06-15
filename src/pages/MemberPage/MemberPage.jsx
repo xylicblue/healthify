@@ -5,7 +5,7 @@ import './MemberPage.css'
 import { useEffect, useState } from 'react'
 import { authFetch } from '../../lib/authFetch'
 
-const API = 'http://localhost:5000'
+const API = 'https://healthify-backend-production-0e90.up.railway.app'
 
 const RECORD_ICONS = {
   BP:     { Icon: Activity,     color: 'text-red-400',    bg: 'bg-red-50'    },

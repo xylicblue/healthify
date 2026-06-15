@@ -6,7 +6,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import { authFetch } from '../../lib/authFetch'
 import './RecordsPage.css'
 
-const API = 'http://localhost:5000'
+const API = 'https://healthify-backend-production-0e90.up.railway.app'
 
 const TABS = [
   { id: 'bp',     label: 'Blood Pressure', Icon: Activity,     color: 'text-red-500',    activeBg: 'bg-red-50',    activeBorder: 'border-red-300'    },

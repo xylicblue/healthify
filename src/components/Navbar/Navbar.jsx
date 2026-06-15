@@ -8,7 +8,7 @@ import { useFamily } from '../../context/FamilyContext'
 import EditProfileModal from '../EditProfileModal/EditProfileModal'
 import FamilySettingsModal from '../FamilySettingsModal/FamilySettingsModal'
 
-const API = 'http://localhost:5000'
+const API = 'https://healthify-backend-production-0e90.up.railway.app'
 
 export default function Navbar() {
   const navigate = useNavigate()

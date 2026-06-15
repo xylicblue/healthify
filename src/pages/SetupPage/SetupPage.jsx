@@ -4,7 +4,7 @@ import { Heart, Users, Hash, ArrowRight, Loader2, LogOut, User } from 'lucide-re
 import { supabase } from '../../lib/supabase'
 import { useFamily } from '../../context/FamilyContext'
 
-const API = 'http://localhost:5000'
+const API = 'https://healthify-backend-production-0e90.up.railway.app'
 
 export default function SetupPage({ session }) {
   const navigate = useNavigate()

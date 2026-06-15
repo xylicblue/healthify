@@ -3,7 +3,7 @@ import { X, User, Loader2, CheckCircle } from 'lucide-react'
 import { authFetch } from '../../lib/authFetch'
 import { useFamily } from '../../context/FamilyContext'
 
-const API = 'http://localhost:5000'
+const API = 'https://healthify-backend-production-0e90.up.railway.app'
 
 export default function EditProfileModal({ onClose, onSaved }) {
   const { currentMember, setCurrentMember } = useFamily()

@@ -12,7 +12,7 @@ import AddRecordPage from './pages/AddRecordPage/AddRecordPage'
 import SetupPage from './pages/SetupPage/SetupPage'
 import './App.css'
 
-const API = 'http://localhost:5000'
+const API = 'https://healthify-backend-production-0e90.up.railway.app'
 
 function LoadingScreen() {
   return (

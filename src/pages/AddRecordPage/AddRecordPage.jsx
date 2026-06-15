@@ -9,7 +9,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { authFetch } from "../../lib/authFetch";
 import "./AddRecordPage.css";
 
-const API = "http://localhost:5000";
+const API = "https://healthify-backend-production-0e90.up.railway.app";
 
 const RECORD_TYPES = [
   { id: "bp",    label: "Blood Pressure", Icon: Activity,     color: "text-red-500",    bg: "bg-red-50",    activeBorder: "border-red-400",    activeBg: "bg-red-50"    },

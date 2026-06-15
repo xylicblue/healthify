@@ -41,7 +41,7 @@ function MemberCardSkeleton() {
   )
 }
 
-const API = "http://localhost:5000";
+const API = "https://healthify-backend-production-0e90.up.railway.app";
 
 export default function DashboardPage() {
   const { familyId, currentMember } = useFamily();

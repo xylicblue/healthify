@@ -5,7 +5,7 @@ import { useFamily } from '../../context/FamilyContext'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../../lib/supabase'
 
-const API = 'http://localhost:5000'
+const API = 'https://healthify-backend-production-0e90.up.railway.app'
 
 export default function FamilySettingsModal({ onClose }) {
   const { familyId, setFamilyId, currentMember, setCurrentMember } = useFamily()
